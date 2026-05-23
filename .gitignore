@@ -1,1 +1,13 @@
-__pycache__/\n*.pyc\n*.log\nlogs/\nreports/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.log
+*.db
+*.sqlite3
+.DS_Store
+node_modules/
+sessions/
+*.egg-info/
+dist/
+build/

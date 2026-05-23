@@ -1,6 +1,6 @@
 # README.md
 """
-# 🔥 The Alcyoneus DB (The Alcy)
+# 🔥 The Alcyoneus DB (The Alcy) [BETA] 
 
 [![Version](https://img.shields.io/badge/version-1.0.0-red.svg)](https://github.com/TheZ4th/The Alcyoneus DB)
 [![License](https://img.shields.io/badge/license-educational-purple.svg)](LICENSE)
@@ -19,6 +19,9 @@
 - **Multi-threaded** - Blazing fast concurrent scanning
 - **Confidence Scoring** - 0-100% confidence for every result
 - **Multiple Export Formats** - JSON, CSV, HTML, PDF, Markdown
+
+## ⚠️ Disclaimer
+This tool is for educational purposes only. Use only on authorized systems.
 
 ## 📦 Installation
 
