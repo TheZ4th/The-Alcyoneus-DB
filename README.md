@@ -1,5 +1,3 @@
-# README.md
-"""
 # 🔥 The Alcyoneus DB (The Alcy) [BETA] 
 
 [![Version](https://img.shields.io/badge/version-1.5.0-red.svg)]
