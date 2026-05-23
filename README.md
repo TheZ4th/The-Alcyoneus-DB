@@ -2,7 +2,7 @@
 """
 # 🔥 The Alcyoneus DB (The Alcy) [BETA] 
 
-[![Version](https://img.shields.io/badge/version-1.0.0-red.svg)](https://github.com/TheZ4th/The Alcyoneus DB)
+[![Version](https://img.shields.io/badge/version-1.5.0-red.svg)]
 [![License](https://img.shields.io/badge/license-educational-purple.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
 
