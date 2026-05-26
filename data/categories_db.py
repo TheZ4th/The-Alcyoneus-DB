@@ -5,6 +5,12 @@ The Alcyoneus DB - Category Definitions
 """
 
 CATEGORIES = {
+    'e_commerce': {
+        'name': 'E-Commerce'
+        'description': 'Online shopping platforms, marketplaces',
+        'icon': '🛒',
+        'priority': 4,
+        'examples': ["Shopee", "Amazon", "TokoPedia", "Shopify"]
     'social_media': {
         'name': 'Social Media',
         'description': 'Major social networking platforms',
@@ -82,13 +88,6 @@ CATEGORIES = {
         'priority': 3,
         'examples': ['Amazon', 'eBay', 'AliExpress', 'Shopify']
     },
-    'review': {
-        'name': 'Review Sites',
-        'description': 'Product and service reviews',
-        'icon': '⭐',
-        'priority': 3,
-        'examples': ['Yelp', 'TripAdvisor', 'Trustpilot', 'GoogleReviews']
-    },
     'news': {
         'name': 'News & Media',
         'description': 'News platforms and comments',
@@ -102,13 +101,6 @@ CATEGORIES = {
         'icon': '🌑',
         'priority': 4,
         'examples': ['Dread', 'TorMarket', 'ASAP', 'Bohemia']
-    },
-    'pastebin': {
-        'name': 'Pastebins',
-        'description': 'Code and text sharing platforms',
-        'icon': '📋',
-        'priority': 2,
-        'examples': ['Pastebin', 'Ghostbin', 'Rentry', 'Controlc']
     },
     'pastebin': {
         'name': 'Pastebins',
@@ -152,17 +144,16 @@ CATEGORIES = {
         'priority': 2,
         'examples': ['Gmail', 'Outlook', 'Yahoo', 'ProtonMail']
     },
-    'cloud': {
-        'name': 'Cloud Storage',
-        'description': 'Cloud storage and file sharing',
-        'icon': '☁️',
-        'priority': 3,
-        'examples': ['GoogleDrive', 'Dropbox', 'OneDrive', 'Mega']
-    }
 }
 
 # Platform to category mapping (will be populated in platforms.json)
 PLATFORM_CATEGORIES = {
+    # E-Commerce
+    'shopee': 'e_commerce',
+    'amazon': 'e_commerce',
+    'tokopedia': 'e_commerce',
+    'shopify': 'e_commerce',
+
     # Social Media
     'facebook': 'social_media',
     'twitter': 'social_media',
@@ -171,55 +162,47 @@ PLATFORM_CATEGORIES = {
     'tiktok': 'video',
     'snapchat': 'social_media',
     'pinterest': 'social_media',
-    
+
     # Coding
     'github': 'coding',
     'gitlab': 'coding',
     'bitbucket': 'coding',
     'stackoverflow': 'coding',
-    
+
     # Messaging
     'telegram': 'messaging',
     'discord': 'messaging',
     'whatsapp': 'messaging',
     'signal': 'messaging',
-    
+
     # Forums
     'reddit': 'forum',
     'quora': 'forum',
     '4chan': 'forum',
-    
+
     # Video
     'youtube': 'video',
     'twitch': 'gaming',
     'vimeo': 'video',
-    
+
     # Music
     'spotify': 'music',
     'soundcloud': 'music',
-    
+
     # Gaming
     'steam': 'gaming',
     'epicgames': 'gaming',
     'xbox': 'gaming',
     'playstation': 'gaming',
-    
+
     # Dating
     'tinder': 'dating',
     'bumble': 'dating',
-    
-    # Shopping
-    'amazon': 'shopping',
-    'ebay': 'shopping',
-    
-    # Review
-    'yelp': 'review',
-    'tripadvisor': 'review',
-    
+
     # Pastebin
     'pastebin': 'pastebin',
     'ghostbin': 'pastebin',
-    
+
     # Email
     'gmail': 'email',
     'outlook': 'email',

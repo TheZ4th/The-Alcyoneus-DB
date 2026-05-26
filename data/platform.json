@@ -33,6 +33,21 @@
     "average_confidence": 0,
     "last_full_audit": null
   },
+  "e_commerce": [
+    {
+      "name": "shopee",
+      "display_name": "Shopee",
+      "url_pattern": "https://shopee.co.id/{username}",
+      "cartegory": "e_commerce",
+      "region": "asia_pacific",
+      "priority": 2,
+      "method": "GET",
+      "requires_auth": false,
+      "verified": true,
+      "confidence": 90,
+      "notes": "Regional e-commerce (SEA). User profiles can be viewed"
+    },
+  ],
   "security_tools": [
     {
       "name": "shodan",
@@ -622,6 +637,21 @@
       "confidence": 85,
       "notes": "Federated Twitter alternative. Need to detect instance",
       "tags": ["social", "federated", "open-source"]
+    },
+    {
+      "name": "parler",
+      "display_name": "Parler",
+      "url_pattern": "https://app.parler.com/{username}",
+      "category": "social_media",
+      "subcategory": "photo_sharing",
+      "region": "nort_america",
+      "priority": 2,
+      "method": "GET",
+      "requires_auth": false,
+      "verified": true,
+      "confidence": 85,
+      "notes": "Social media platform for conservative content.",
+      "tags": ["social", "story", "photo"]
     }
   ],
   "forums": [

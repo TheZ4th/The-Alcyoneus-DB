@@ -156,8 +156,8 @@ PROVIDERS = {
         'regex': r'^(?:\+91|0)?[6-9]\d{9}$'
     },
 
-    # ==================== RUSIA (7) - DIPERBAIKI ====================
-    'RU': {  # Ganti dari 'RS' ke 'RU' (kode negara standar)
+    # ==================== RUSIA (7) ====================
+    'RU': {
         'name': 'Russia',
         'code': '7',
         'prefixes': {
@@ -174,7 +174,7 @@ PROVIDERS = {
         'regex': r'^(?:\+7|8)?9\d{9}$'
     },
 
-    # ==================== KOREA SELATAN (82) - TAMBAHAN ====================
+    # ==================== KOREA SELATAN (82) ====================
     'KR': {
         'name': 'South Korea',
         'code': '82',
@@ -186,7 +186,7 @@ PROVIDERS = {
         'regex': r'^(?:\+82|0)?10\d{8}$'
     },
 
-    # ==================== PAKISTAN (92) - TAMBAHAN ====================
+    # ==================== PAKISTAN (92) ====================
     'PK': {
         'name': 'Pakistan',
         'code': '92',
@@ -200,7 +200,7 @@ PROVIDERS = {
         'regex': r'^(?:\+92|0)?3\d{9}$'
     },
 
-    # ==================== BANGLADESH (880) - TAMBAHAN ====================
+    # ==================== BANGLADESH (880) ====================
     'BD': {
         'name': 'Bangladesh',
         'code': '880',
@@ -212,7 +212,7 @@ PROVIDERS = {
         'regex': r'^(?:\+880|0)?1\d{9}$'
     },
 
-    # ==================== NIGERIA (234) - TAMBAHAN ====================
+    # ==================== NIGERIA (234) ====================
     'NG': {
         'name': 'Nigeria',
         'code': '234',
@@ -226,5 +226,133 @@ PROVIDERS = {
             '0908': '9mobile', '0909': '9mobile', '0912': 'Airtel', '0913': 'MTN',
         },
         'regex': r'^(?:\+234|0)?[789]\d{9}$'
+    },
+
+    # =================== AUSTRALIA (61) =====================
+    'AU': {
+        'name': 'Austrslia',
+        'codd': '61',
+        'prefixes': {
+            # Telstra
+            '0410': 'Telstra', '0411': 'Telstra', '0412': 'Telstra',
+            '0413': 'Telstra', '0414': 'Telstra', '0415': 'Telstra',
+            '0416': 'Telstra', '0417': 'Telstra', '0418': 'Telstra',
+            '0419': 'Telstra',
+            # Optus
+            '0400': 'Optus', '0401': 'Optus', '0402': 'Optus',
+            '0403': 'Optus', '0404': 'Optus', '0405': 'Optus',
+            '0406': 'Optus', '0407': 'Optus', '0408': 'Optus',
+            '0409': 'Optus',
+            # Vodafone
+            '0420': 'Vodafone', '0421': 'Vodafone', '0422': 'Vodafone',
+            '0423': 'Vodafone', '0424': 'Vodafone', '0425': 'Vodafone',
+            '0426': 'Vodafone', '0427': 'Vodafone', '0428': 'Vodafone',
+            '0429': 'Vodafone',
+            # Amaysim (uses Optus network)
+            '0470': 'Amaysim', '0471': 'Amaysim', '0472': 'Amaysim',
+            '0473': 'Amaysim', '0474': 'Amaysim', '0475': 'Amaysim',
+            # Boost (uses Telstra network)
+            '0480': 'Boost', '0481': 'Boost', '0482': 'Boost',
+            # Others
+            '0450': 'Vodafone', '0451': 'Vodafone', '0452': 'Vodafone',
+            '0455': 'Optus', '0456': 'Optus', '0457': 'Optus',
+            '0466': 'Telstra', '0467': 'Telstra', '0468': 'Telstra',
+        },
+        'regex': r'^(?:\+?61|0)[2-478](?:[ -]?[0-9]){8}$'
+    },
+
+    #===================== CHINA (86) ====================
+    'CN': {
+        'name': 'China',
+        'code': '86',
+        'prefixes': {
+            # China Mobile
+            '134': 'China Mobile', '135': 'China Mobile', '136': 'China Mobile',
+            '137': 'China Mobile', '138': 'China Mobile', '139': 'China Mobile',
+            '147': 'China Mobile', '150': 'China Mobile', '151': 'China Mobile',
+            '152': 'China Mobile', '157': 'China Mobile', '158': 'China Mobile',
+            '159': 'China Mobile', '165': 'China Mobile', '172': 'China Mobile',
+            '178': 'China Mobile', '182': 'China Mobile', '183': 'China Mobile',
+            '184': 'China Mobile', '187': 'China Mobile', '188': 'China Mobile',
+            '195': 'China Mobile', '197': 'China Mobile', '198': 'China Mobile',
+            '1703': 'China Mobile', '1705': 'China Mobile', '1706': 'China Mobile',
+            # China Unicom
+            '130': 'China Unicom', '131': 'China Unicom', '132': 'China Unicom',
+            '145': 'China Unicom', '155': 'China Unicom', '156': 'China Unicom',
+            '166': 'China Unicom', '167': 'China Unicom', '171': 'China Unicom',
+            '175': 'China Unicom', '176': 'China Unicom', '185': 'China Unicom',
+            '186': 'China Unicom', '196': 'China Unicom',
+            '1704': 'China Unicom', '1707': 'China Unicom', '1708': 'China Unicom',
+            '1709': 'China Unicom',
+            # China Telcom
+            '133': 'China Telcom', '153': 'China Telcom', '162': 'China Telcom',
+            '173': 'China Telcom', '174': 'China Telcom', '177': 'China Telcom',
+            '180': 'China Telcom', '181': 'China Telcom', '189': 'China Telcom',
+            '190': 'China Telcom', '191': 'China Telcom', '193': 'China Telcom',
+            '199': 'China Telcom',
+            '1700': 'China Telcom', '1701': 'China Telcom', '1702': 'China Telcom',
+            # China Broadnet
+            '192': 'China Broadnet',
+        },
+        'regex': r'^(?:\+?86|0)?(?:1[3-9]\d{9}|[2-9]\d{9,10})$'
+    },
+    #===================== KAMBOJA (855) ====================
+    'KH': {
+        'name': 'Cambodia',
+        'code': '855',
+        'prefixes': {
+            # Cellcard (CamGSM)
+            '11': 'Cellcard', '12': 'Cellcard', '14': 'Cellcard', '17': 'Cellcard',
+            '61': 'Cellcard', '76': 'Cellcard', '89': 'Cellcard', '92': 'Cellcard',
+            # Metfone (Viettel Cambodia)
+            '10': 'Metfone', '31': 'Metfone', '33': 'Metfone', '38': 'Metfone',
+            '39': 'Metfone', '60': 'Metfone', '66': 'Metfone', '67': 'Metfone',
+            '68': 'Metfone', '69': 'Metfone', '70': 'Metfone', '71': 'Metfone',
+            '81': 'Metfone', '86': 'Metfone', '87': 'Metfone', '88': 'Metfone',
+            '90': 'Metfone', '93': 'Metfone', '97': 'Metfone', '98': 'Metfone',
+            '99': 'Metfone',
+            # Smart Axiata
+            '13': 'Smart', '15': 'Smart', '16': 'Smart', '18': 'Smart',
+            '36': 'Smart', '58': 'Smart', '59': 'Smart', '77': 'Smart',
+            '78': 'Smart', '83': 'Smart', '84': 'Smart', '85': 'Smart',
+            '91': 'Smart', '96': 'Smart',
+            # Seatel
+            '19': 'Seatel',
+            # COTAD
+            '95': 'COTAD',
+        },
+        'regex': r'^(?:\+?855|0)?(?:1[0-9]{7,8}|[3-9][0-9]{7,8})$'
+    },
+
+    # ==================== JERMAN (49) ====================
+    'DE': {
+        'name': 'Germany',
+        'code': '49',
+        'prefixes': {
+            # D1 - T-Mobile (Deutsche Telekom)
+            '151': 'T-Mobile', '1510': 'T-Mobile', '1511': 'T-Mobile',
+            '1512': 'T-Mobile', '1514': 'T-Mobile', '1515': 'T-Mobile',
+            '1516': 'T-Mobile', '1517': 'T-Mobile', '1519': 'T-Mobile',
+            '152': 'T-Mobile', '1520': 'T-Mobile', '1522': 'T-Mobile',
+            '1525': 'T-Mobile', '1526': 'T-Mobile', '1529': 'T-Mobile',
+            '160': 'T-Mobile', '162': 'T-Mobile', '163': 'T-Mobile',
+            # D2 - Vodafone
+            '1522': 'Vodafone', '1528': 'Vodafone', '155': 'Vodafone',
+            '157': 'Vodafone', '1570': 'Vodafone', '1573': 'Vodafone',
+            '1575': 'Vodafone', '1577': 'Vodafone', '1578': 'Vodafone',
+            '159': 'Vodafone', '173': 'Vodafone', '174': 'Vodafone',
+            # E-Plus
+            '152': 'E-Plus', '157': 'E-Plus', '1577': 'E-Plus', '1579': 'E-Plus',
+            '163': 'E-Plus', '165': 'E-Plus', '166': 'E-Plus', '167': 'E-Plus',
+            # O2 (Telefónica)
+            '152': 'O2', '159': 'O2', '168': 'O2', '171': 'O2',
+            '172': 'O2', '175': 'O2', '176': 'O2', '179': 'O2',
+        },
+        'mvno': {
+            '1515': '1&1', '1517': '1&1', '1521': '1&1', '1522': '1&1',
+            '1572': '1&1', '1576': '1&1', '1591': '1&1', '1722': '1&1',
+        },
+
+        'regex': r'^(?:\+?49|0)?(?:1[5-7][0-9]{8}|15[0-9]{8}|16[0-9]{7,8}|17[0-9]{7,8})$'
     },
 }

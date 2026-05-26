@@ -10,10 +10,10 @@ import sys
 import json
 from datetime import datetime
 
-from .database import AlcyoneusDB
-from .hunter import UsernameHunter
-from .validator import AntiFalsePositiveValidator
-from .exporter import DataExporter
+from database import AlcyoneusDB
+from hunter import UsernameHunter
+from validator import AntiFalsePositiveValidator
+from exporter import DataExporter
 
 R = '\033[91m'
 G = '\033[92m'
@@ -25,7 +25,7 @@ BOLD = '\033[1m'
 def print_banner():
     """Print The Alcyoneus DB banner"""
     banner = f"""
-{R}{BOLD}
+{C}{BOLD}
 ╔═══════════════════════════════════════════════════════════════════════════════╗
 ║                                                                               ║
 ║   █████╗ ██╗      ██████╗██╗   ██╗ ██████╗ ███╗   ██╗███████╗██╗   ██╗███████╗
