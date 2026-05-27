@@ -475,6 +475,79 @@
       "tags": ["email", "german", "free"]
     }
   ],
+  "video_and_streaming": [
+    {
+      "name": "twitch",
+      "display_name": "Twitch",
+      "url_pattern": "https://m.twitch.tv/{username}/home",
+      "category": "streaming",
+      "region": "global",
+      "priority": 2,
+      "method": "GET",
+      "requires_auth": false,
+      "verified": true,
+      "confidence": 89,
+      "notes": "Platform Streaming",
+      "tags": ["streaming", "video", "gaming"]
+    },
+    {
+      "name": "vimeo",
+      "display_name": "Vimeo",
+      "url_pattern": "https://vimeo.com/{username}",
+      "category": "streaming",
+      "region": "global",
+      "priority": 3,
+      "method": "GET",
+      "requires_auth": false,
+      "verified": true,
+      "confidence": 87,
+      "notes": "Platform streaming and colaboration",
+      "tags": ["streaming", "product", "music", "video"]
+    },
+    {
+      "name": "youtube",
+      "display_name": "YouTube",
+      "url_pattern": "https://m.youtube.com/@{username}",
+      "category": "streaming",
+      "region": "global",
+      "priority": 2,
+      "method": "GET",
+      "requires_auth": false,
+      "verified": true,
+      "confidence": 89,
+      "notes": "Platform streaming and sharing video",
+      "tags": ["gaming", "streaming", "video"]
+    },
+    {
+      "name": "kick",
+      "display_name": "Kick",
+      "url_pattern": "https://kick.com/{username}",
+      "category": "streaming",
+      "region": "global",
+      "priority": 3,
+      "method": "GET",
+      "requires_auth": false,
+      "verified": true,
+      "confidence": 85,
+      "notes": "Platform video sharing and streaming",
+      "tags": ["video", "streaming", "gaming"]
+    },
+    {
+      "name": "rumble",
+      "display_name": "Rumble",
+      "url_pattern": "https://rumble.com/user/{username}",
+      "url_pattern_alt": "https://rumble.com/c/{channel_name}",
+      "category": "streaming",
+      "region": "global",
+      "priority": 2,
+      "method": "GET",
+      "requires_auth": false,
+      "verified": true,
+      "confidence": 80,
+      "notes": "Video sharing platform, YouTube alternative. Loading is sometimes slow.",
+      "tags": ["video", "streaming", "alternative"]
+    },
+  ],
   "social_media": [
     {
       "name": "facebook",

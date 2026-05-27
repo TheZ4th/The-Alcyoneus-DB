@@ -5,12 +5,20 @@ The Alcyoneus DB - Category Definitions
 """
 
 CATEGORIES = {
+    'video_and_streaming': {
+        'name': 'Video And Streaming',
+        'description': 'Platform video sharing, Streaming and Visual content ',
+        'icon': '🎥',
+        'priority' 3,
+        'examples': ["Twitch", "Youtube", "Vimeo"]
+    },
     'e_commerce': {
         'name': 'E-Commerce'
         'description': 'Online shopping platforms, marketplaces',
         'icon': '🛒',
         'priority': 4,
         'examples': ["Shopee", "Amazon", "TokoPedia", "Shopify"]
+    },
     'social_media': {
         'name': 'Social Media',
         'description': 'Major social networking platforms',
@@ -80,13 +88,6 @@ CATEGORIES = {
         'icon': '💕',
         'priority': 3,
         'examples': ['Tinder', 'Bumble', 'OkCupid', 'Hinge']
-    },
-    'shopping': {
-        'name': 'E-commerce',
-        'description': 'Online shopping platforms',
-        'icon': '🛒',
-        'priority': 3,
-        'examples': ['Amazon', 'eBay', 'AliExpress', 'Shopify']
     },
     'news': {
         'name': 'News & Media',
@@ -179,11 +180,6 @@ PLATFORM_CATEGORIES = {
     'reddit': 'forum',
     'quora': 'forum',
     '4chan': 'forum',
-
-    # Video
-    'youtube': 'video',
-    'twitch': 'gaming',
-    'vimeo': 'video',
 
     # Music
     'spotify': 'music',

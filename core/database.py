@@ -17,8 +17,8 @@ class AlcyoneusDB:
     
     def __init__(self, data_dir: str = None):
         self.data_dir = data_dir or os.path.dirname(os.path.abspath(__file__))
-        self.platforms_file = os.path.normpath(os.path.join(self.data_dir, '../data/platform.json'))
-        self.results_file = os.path.normpath(os.path.join(self.data_dir, '../reports/hunts/results.json'))
+        self.platforms_file = os.path.normpath(os.path.join(self.data_dir, '/data/data/com.termux/files/home/Alcy/data/platform.json''))
+        self.results_file = os.path.normpath(os.path.join(self.data_dir, '/data/data/com.termux/files/home/reports/hunt/results.json'))
         self.lock = threading.Lock()
         
         # In-memory cache
